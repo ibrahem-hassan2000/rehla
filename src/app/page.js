@@ -252,7 +252,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="sectionCards">
+      {/* <section className="sectionCards">
         <div className="container">
           <span className="headCards">Featured coures</span>
           <h2 className="headTitle">
@@ -319,7 +319,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
