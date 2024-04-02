@@ -1,4 +1,8 @@
+import SliderImages from "../../Components/SliderImages";
+
+
 export default function Home() {
+
   return (
     <main className="">
       <section className="investor">
@@ -29,36 +33,33 @@ export default function Home() {
             laboriosam.
           </p>
           <div className="parts">
-            <div className="part">
+            <a href="#" className="part">
               <img src="/images/serv1.webp" alt="service 1" />
               <h3>I'm going to</h3>
               <p>
                 Passengers order a ride with a local driver to go to another
                 place inside the city Ride-hailing.
               </p>
+            </a>
+            <div className="part">
+              <img src="/images/serv2.webp" alt="service 1" />
+              <h3>Prebooking trips</h3>
+              <p>
+              Passengers can make a prebooking trip order with a local driver to go to any place.
+              </p>
             </div>
             <div className="part">
-              <img src="/images/serv1.webp" alt="service 1" />
-              <h3>I'm going to</h3>
+              <img src="/images/serv3.webp" alt="service 1" />
+              <h3>Tourism Tours</h3>
               <p>
-                Passengers order a ride with a local driver to go to another
-                place inside the city Ride-hailing.
+              Tourism expert creates a tour of the tourist cities and is searched for by regions.
               </p>
             </div>
             <div className="part">
               <img src="/images/serv1.webp" alt="service 1" />
-              <h3>I'm going to</h3>
+              <h3>Sending Parcels</h3>
               <p>
-                Passengers order a ride with a local driver to go to another
-                place inside the city Ride-hailing.
-              </p>
-            </div>
-            <div className="part">
-              <img src="/images/serv1.webp" alt="service 1" />
-              <h3>I'm going to</h3>
-              <p>
-                Passengers order a ride with a local driver to go to another
-                place inside the city Ride-hailing.
+              Sender offers a parcel to deliver between cities and wait for Rehla captain to accept it.
               </p>
             </div>
           </div>
@@ -252,7 +253,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section className="sectionCards">
+     <section className="sectionCards">
         <div className="container">
           <span className="headCards">Featured coures</span>
           <h2 className="headTitle">
@@ -263,7 +264,7 @@ export default function Home() {
             integer at odio velna vitae auctor integer.
           </p>
           <div className="cards">
-            <div className="card">
+            <div className="cardItem">
               <div className="imgBox">
                 <img alt="card name img" src="/images/card1.jpeg"/>
               </div>
@@ -281,7 +282,7 @@ export default function Home() {
                 <a href="" className="btnPage">Charge wallet</a>
               </div>
             </div>
-            <div className="card">
+            <div className="cardItem">
               <div className="imgBox">
                 <img alt="card name img" src="/images/card1.jpeg"/>
               </div>
@@ -299,7 +300,7 @@ export default function Home() {
                 <a href="" className="btnPage">Charge wallet</a>
               </div>
             </div>
-            <div className="card">
+            <div className="cardItem">
               <div className="imgBox">
                 <img alt="card name img" src="/images/card1.jpeg"/>
               </div>
@@ -319,7 +320,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section> 
+      <section className="screenshots">
+        <div className="container">
+          <h2 className="headTitle">
+            <span>Rehla</span>  screenshots
+          </h2>
+          <p className="dec">
+            An enim nullam tempor sapien gravida donec enim ipsum porta justo
+            integer at odio velna vitae auctor integer.
+          </p>
+          <div className="sliderImages">
+            <SliderImages/>
+          </div>
+        
+        </div>
+      </section> 
     </main>
   );
 }
