@@ -4,7 +4,6 @@ import Slider from "react-slick";
 
 function SliderImages() {
   var settings = {
-
     dots: true,
     infinite: true,
     slidesToShow: 5,
@@ -14,42 +13,38 @@ function SliderImages() {
     autoplaySpeed: 1000,
     pauseOnHover: true,
     responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4,
-            
-          }
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
         },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2.8,
-          }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2.8,
         },
-        
-      ]
+      },
+    ],
   };
   return (
     <Slider {...settings}>
       <div className="itemImg">
-        <img alt="slider img" src="/images/slider1.webp" />
-      </div>
-      <div className="itemImg">
         <img alt="slider img" src="/images/slider2.webp" />
-      </div>
-      <div className="itemImg">
-        <img alt="slider img" src="/images/slider3.webp" />
       </div>
       <div className="itemImg">
         <img alt="slider img" src="/images/slider1.webp" />
       </div>
       <div className="itemImg">
-        <img alt="slider img" src="/images/slider2.webp" />
+        <img alt="slider img" src="/images/slider5.webp" />
       </div>
       <div className="itemImg">
         <img alt="slider img" src="/images/slider3.webp" />
       </div>
+      <div className="itemImg">
+        <img alt="slider img" src="/images/slider4.webp" />
+      </div>
+      
     </Slider>
   );
 }

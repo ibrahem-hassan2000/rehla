@@ -660,6 +660,15 @@ li.nav-item.lang a.active {
   .services .parts {
     margin-top: 26px;
   }
+  .services .headTitle {
+    font-size: 36px;
+    line-height: 40px;
+    max-width: 100%;
+  }
+  .services .headTitle span {
+    font-size: 36px;
+    line-height: 40px;
+  }
 }
 /*news*/
 .news {
@@ -749,6 +758,12 @@ li.nav-item.lang a.active {
     font-size: 36px;
     line-height: 44px;
     max-width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .news .headTitle {
+    font-size: 28px;
+    line-height: 32px;
   }
 }
 /*steps*/
@@ -1035,6 +1050,7 @@ li.nav-item.lang a.active {
   .sectionCards .headTitle {
     font-size: 36px;
     margin: 0px auto 12px;
+    line-height: 30px;
   }
   .sectionCards .headTitle span {
     font-size: 36px;
@@ -1151,20 +1167,177 @@ li.nav-item.lang a.active {
   .screenshots .dec {
     font-size: 16px;
     max-width: 100%;
-   
+  }
+  .screenshots .headTitle {
+    font-size: 34px;
+    margin: 0px auto 6px;
+  }
+  .screenshots .headTitle span {
+    font-size: 34px;
+  }
+  .screenshots .sliderImages {
+    padding: 18px 0px 18px;
+  }
+  .screenshots .slick-dots {
+    bottom: -18px;
+  }
 }
-.screenshots .headTitle {
-  font-size: 34px;
-  margin: 0px auto 6px;
+/*counters*/
+.counters {
+  padding: 100px 0px;
+  background-color: var(--background);
 }
-.screenshots .headTitle span {
-  font-size: 34px;
+.counters .parts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.counters .parts .part {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+.counters .parts .part svg {
+  margin-top: 6px;
+}
+.counters .parts .part .details {
+}
+.counters .parts .part .details h2 {
+  color: var(--text_color);
+  font-family: "TajawalB";
+  font-size: 60px;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.counters .parts .part .details p {
+  color: var(--text_color);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-family: "TajawalB";
+}
+@media (max-width: 992px) {
+  .counters .parts .part {
+    gap: 16px;
+  }
+  .counters .parts .part .details h2 {
+    font-size: 50px;
 
+    margin-bottom: 10px;
+  }
+  .counters .parts {
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .counters .parts .part svg {
+    margin-top: 6px;
+    height: 50px;
+  }
+  .counters {
+    padding: 60px 0px;
+  }
 }
-.screenshots .sliderImages {
-  padding: 18px 0px 18px;
+@media (max-width: 768px) {
+  .counters .parts {
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+  .counters {
+    padding: 34px 0px;
+  }
 }
-.screenshots .slick-dots {
-  bottom: -18px;
+@media (max-width: 450px) {
+  .counters .parts {
+    gap: 38px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .counters .parts .part .details h2 {
+    font-size: 50px;
+    margin-bottom: 0px;
+  }
 }
+/*message*/
+.message {
+  background-image: url("/images/people.webp");
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0px;
+  min-height: 440px;
+  color: white;
+  position: relative;
+}
+.message::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(202, 67%, 54%, 0.93);
+}
+.message .contant {
+  padding: 0px 12px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+.message .contant h2 {
+  font-family: "TajawalB";
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 16px;
+}
+.message .contant p {
+  font-family: "TajawalM";
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 640px;
+  margin: auto;
+}
+.message .contant ul {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 416px;
+  max-width: 80%;
+  margin: auto;
+}
+.message .contant ul li {
+  width: 196px;
+  max-width: 100%;
+  flex: 1;
+}
+.message .contant ul li a {
+  width: 100%;
+  height: 100%;
+}
+.message .contant ul li a img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .message .contant h2 {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 12px;
+  }
+  .message .contant p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 450px;
+  }
+  .message {
+    padding: 54px 0px;
+    min-height: 300px;
+  }
+  .message .contant ul {
+    padding-top: 30px;
+    gap: 16px;
+    width: 340px;
+  }
 }
