@@ -1,3 +1,4 @@
+
 import SliderImages from "../../Components/SliderImages";
 
 export default function Home() {
@@ -470,10 +471,13 @@ export default function Home() {
         </div>
       </section>
       <section className="message">
-      
         <div className="contant">
           <h2>Rehla is available for all devices</h2>
-          <p>A Private Limited is the most popular type of partnership Malta. The limited liabilityis, in fact, the only type of the company allowed by Companies.</p>
+          <p>
+            A Private Limited is the most popular type of partnership Malta. The
+            limited liabilityis, in fact, the only type of the company allowed
+            by Companies.
+          </p>
           <ul>
             <li>
               <a href="#">
@@ -488,6 +492,7 @@ export default function Home() {
           </ul>
         </div>
       </section>
+    
     </main>
   );
 }

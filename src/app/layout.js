@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import LayNav from "../../Components/LayNav";
+import Footer from "../../Components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +18,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <LayNav/>
+        <LayNav />
         {children}
+        <Footer/>
         <Script src="/bootstrap.js" />
-      
       </body>
-
     </html>
   );
 }
