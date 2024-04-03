@@ -1,4 +1,4 @@
-
+import SayingSlider from "../../Components/SayingSlider";
 import SliderImages from "../../Components/SliderImages";
 
 export default function Home() {
@@ -470,6 +470,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="saying">
+        <div className="container">
+          <div className="content">
+            <div className="part1">
+              <h2>What clients are saying</h2>
+              <div className="boxClientSay">
+                <SayingSlider/>
+              </div>
+            
+            </div>
+            <div className="part2">
+              <img src="/images/imagesay.webp" alt="poeple" />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="message">
         <div className="contant">
           <h2>Rehla is available for all devices</h2>
@@ -492,7 +508,7 @@ export default function Home() {
           </ul>
         </div>
       </section>
-    
+     
     </main>
   );
 }

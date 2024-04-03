@@ -1529,3 +1529,157 @@ footer .content .part.endPart a p {
     font-size: 16px;
   }
 }
+/*saying*/
+.saying {
+  padding: 100px 0px 72px;
+}
+.saying .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.saying .content .part1 {
+  flex: 1;
+  max-width: 500px;
+  padding-top: 20px;
+}
+.saying .content .part1 h2 {
+  color: var(--text_color);
+  font-size: 48px;
+  margin-bottom: 60px;
+  line-height: 56px;
+  font-family: "TajawalB";
+}
+.saying .content .part1 .boxClientSay {
+  max-width: 450px;
+  margin-bottom: 40px;
+}
+.saying .content .part1 .clientSay {
+  color: var(--text_color);
+}
+.saying .content .part1 .clientSay svg {
+}
+.saying .content .part1 .clientSay h3 {
+  margin: 30px 0px 16px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000b33cb;
+  font-family: "TajawalM";
+}
+.saying .content .part1 .clientSay h4 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 6px;
+  font-family: "TajawalB";
+}
+.saying .content .part1 .clientSay p {
+  color: #000b33b6;
+  font-family: "TajawalM";
+  font-size: 18px;
+  line-height: 26px;
+}
+.saying .content .part2 {
+  flex: 1;
+  max-width: 526px;
+  width: 100%;
+}
+.saying .content .part2 img {
+  width: 100%;
+  height: auto;
+}
+.saying .slick-prev,
+.saying .slick-next {
+  font-size: 0;
+  top: calc(100% + 36px);
+  transform: none;
+  background: #222d61;
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+  left: 60px;
+}
+.saying .slick-prev {
+  left: 0px;
+}
+.slick-prev:before,
+.slick-next:before {
+  content: "";
+  font-size: 0px;
+  background-image: url("/images/arrow1.png");
+  width: 17px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slick-prev:before {
+  background-image: url("/images/arrow2.png");
+}
+@media (max-width: 992px) {
+  .saying .content .part1 h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+    line-height: 36px;
+  }
+  .saying .content .part1 .clientSay h3 {
+    margin: 16px 0px 14px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .saying .content .part1 .clientSay h4 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 4px;
+  }
+  .saying .content .part1 .clientSay p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .saying .content .part1 .clientSay svg {
+    height: 24px;
+  }
+  .saying .content {
+    gap: 20px 10px;
+  }
+  .saying {
+    padding: 60px 0px 52px;
+  }
+}
+@media (max-width: 768px) {
+  .saying {
+    padding: 30px 0px 36px;
+  }
+  .saying .content .part2 {
+    max-width: 350px;
+    width: 90%;
+    margin: auto;
+  }
+  .saying .content {
+    gap: 4px 10px;
+    flex-direction: column-reverse;
+  }
+  .saying .content .part1 h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
+  .saying .slick-prev,
+  .saying .slick-next {
+    top: calc(100% + 14px);
+    height: 30px;
+    width: 30px;
+    left: 46px;
+  }
+  .saying .slick-prev {
+    left: 0px;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    width: 14px;
+    height: 12px;
+  }
+}
