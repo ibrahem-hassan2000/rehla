@@ -4,6 +4,46 @@ import SliderImages from "../../Components/SliderImages";
 export default function Home() {
   return (
     <main className="">
+      <section className="header">
+        <div className="svgHeader">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#ffff"
+              fill-opacity="1"
+              d="M0,288L80,293.3C160,299,320,309,480,309.3C640,309,800,299,960,282.7C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+        <div className="container">
+          <div className="content">
+            <div className="part1">
+              <h1>
+                Rehla App is The Best App For Booking Ride And Sharing Trips
+              </h1>
+              <p>
+                Rehla is a ride sharing and a ride hailing service that links
+                between passengers and vehicle owners heading to the same
+                destination.
+              </p>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="/images/appstore.webp" alt="appstore" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="/images/playstore.webp" alt="playstore" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="part2">
+              <img src="/images/headerImage.webp" alt="headerImage" />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="investor">
         <div className="container">
           <div className="parts">
@@ -100,6 +140,111 @@ export default function Home() {
               <a href="#" className="btnPage">
                 Get Started
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="videos ">
+        <div className="container">
+          <div className="content">
+            <div className="part1">
+              <span className="headvid">About Rehla</span>
+              <h2 className="headTitle">
+                {" "}
+                <span>Rehla</span> introducing video promotion{" "}
+              </h2>
+              <p>
+                Rehla application .... the pleasure of traveling between cities
+                at the lowest cost and more safety Rehlacar offers a unique
+                travel experience between cities at the lowest cost and the most
+                enjoyable and safe ways. Rehla application licensed by the
+                Public Transport Authority and compatible with all safety and
+                security requirements in Saudi Arabia, and is based on the
+                principle of sharing travel costs between passengers and
+                vehicles owners .
+              </p>
+              <a href="#" className="btnPage">
+                Get Started
+              </a>
+            </div>
+            <div className="part2">
+              <div className="boxVideo">
+                <iframe
+                 
+                  src="https://www.youtube.com/embed/OtTdBgQEceE"
+                ></iframe>
+              </div>
+              <div className="boxLab"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="videos rev">
+        <div className="container">
+          <div className="content">
+            <div className="part1">
+              <span className="headvid">About Rehla</span>
+              <h2 className="headTitle">
+                {" "}
+                <span>Rehla</span> introducing video promotion{" "}
+              </h2>
+              <p>
+                Rehla application .... the pleasure of traveling between cities
+                at the lowest cost and more safety Rehlacar offers a unique
+                travel experience between cities at the lowest cost and the most
+                enjoyable and safe ways. Rehla application licensed by the
+                Public Transport Authority and compatible with all safety and
+                security requirements in Saudi Arabia, and is based on the
+                principle of sharing travel costs between passengers and
+                vehicles owners .
+              </p>
+              <a href="#" className="btnPage">
+                Get Started
+              </a>
+            </div>
+            <div className="part2">
+              <div className="boxVideo">
+                <iframe
+                 
+                  src="https://www.youtube.com/embed/OtTdBgQEceE"
+                ></iframe>
+              </div>
+              <div className="boxLab"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="videos ">
+        <div className="container">
+          <div className="content">
+            <div className="part1">
+              <span className="headvid">About Rehla</span>
+              <h2 className="headTitle">
+                {" "}
+                <span>Rehla</span> introducing video promotion{" "}
+              </h2>
+              <p>
+                Rehla application .... the pleasure of traveling between cities
+                at the lowest cost and more safety Rehlacar offers a unique
+                travel experience between cities at the lowest cost and the most
+                enjoyable and safe ways. Rehla application licensed by the
+                Public Transport Authority and compatible with all safety and
+                security requirements in Saudi Arabia, and is based on the
+                principle of sharing travel costs between passengers and
+                vehicles owners .
+              </p>
+              <a href="#" className="btnPage">
+                Get Started
+              </a>
+            </div>
+            <div className="part2">
+              <div className="boxVideo">
+                <iframe
+                 
+                  src="https://www.youtube.com/embed/OtTdBgQEceE"
+                ></iframe>
+              </div>
+              <div className="boxLab"></div>
             </div>
           </div>
         </div>
@@ -476,9 +621,8 @@ export default function Home() {
             <div className="part1">
               <h2>What clients are saying</h2>
               <div className="boxClientSay">
-                <SayingSlider/>
+                <SayingSlider />
               </div>
-            
             </div>
             <div className="part2">
               <img src="/images/imagesay.webp" alt="poeple" />
@@ -508,7 +652,6 @@ export default function Home() {
           </ul>
         </div>
       </section>
-     
     </main>
   );
 }
