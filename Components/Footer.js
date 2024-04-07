@@ -7,9 +7,9 @@ function Footer() {
       <div className="container">
         <div className="content">
           <div className="part1">
-            <a href="" className="footerLogo">
+            <Link href="/" className="footerLogo">
               <img src="/images/logoFooter.jpg" alt="logo" />
-            </a>
+            </Link>
             <p>
               Rehla is a ride sharing and a ride hailing service that links
               between passengers and vehicle owners heading to the same
@@ -111,7 +111,7 @@ function Footer() {
                 <Link href="/prebooking"> Prebooking Trips</Link>
               </li>
               <li>
-                <Link href="/tourism"> Tourism Tours</Link>
+                <Link href="/tourismTours"> Tourism Tours</Link>
               </li>
             </ul>
           </div>

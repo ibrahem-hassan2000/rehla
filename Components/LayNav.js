@@ -5,9 +5,9 @@ function LayNav() {
   return (
     <nav className="navbar fixed-top navbar-expand-lg ">
       <div className="container">
-        <a routerlink="/home" className="navbar-brand" href="/home">
+        <Link  className="navbar-brand" href="/">
           <img src="/images/logo.png" alt="Rehlacar" />
-        </a>
+        </Link>
         <div className="navbar-toggler2">
           <Link className="btnNav" href="/account/login">
             Login
@@ -48,7 +48,7 @@ function LayNav() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/our-services">
+                <Link className="nav-link" href="/services">
                   Services
                 </Link>
               </li>
@@ -58,7 +58,7 @@ function LayNav() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/tourism/tours">
+                <Link className="nav-link" href="/tourismTours">
                   Tourism Tours
                 </Link>
               </li>

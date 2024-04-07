@@ -1936,5 +1936,202 @@ footer .content .part.endPart a p {
   .videos .content .part1 p {
     font-size: 16px;
     margin-bottom: 22px;
+  }
 }
+/*HeadContent*/
+.HeadContent {
+  padding: 94px 10px;
+  background: radial-gradient(
+    109.63% 37.62% at 50% 50%,
+    #3da0d8 0%,
+    #0077bb 100%
+  );
+
+  position: relative;
+  color: white;
+}
+.HeadContent::before {
+  content: "";
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/backHeader.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+.HeadContent .content {
+  position: relative;
+}
+.HeadContent .content h2 {
+  font-size: 70px;
+  font-family: "TajawalB";
+  line-height: 80px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.HeadContent .content h3 {
+  max-width: 416px;
+  margin: auto;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 16px;
+  font-family: "TajawalB";
+  opacity: 0.8;
+}
+.HeadContent .content .path {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.HeadContent .content .path p {
+  font-size: 16px;
+  font-family: "TajawalB";
+}
+.HeadContent .content .path span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HeadContent .content .path span svg {
+}
+@media (max-width: 768px) {
+  .HeadContent {
+    padding: 34px 10px;
+  }
+  .HeadContent .content h2 {
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 16px;
+  }
+  .HeadContent .content .path {
+    gap: 8px;
+    margin-top: 24px;
+  }
+}
+@media (max-width: 450px) {
+  .HeadContent .content .path p {
+    font-size: 14px;
+  }
+  .HeadContent .content h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  .HeadContent .content h3 {
+    font-size: 14px;
+  }
+}
+/*tourism*/
+.tourism {
+  padding-top: 90px;
+}
+.tourism .content {
+}
+.tourism .content .headTitle {
+  text-align: center;
+  margin: 0px auto 16px;
+}
+.tourism .content p {
+  text-align: center;
+  max-width: 370px;
+  margin: auto;
+  font-size: 18px;
+  font-family: "TajawalM";
+}
+.tourism .content .parts {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 60px auto 50px;
+  max-width: 1106px;
+}
+.tourism .content .parts .part {
+  position: relative;
+  width: 350px;
+  min-width: 260px;
+  max-width: 350px;
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.tourism .content .parts .part::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0.49deg, #000000 0.47%, rgba(0, 0, 0, 0) 44.93%);
+  bottom: 0;
+  z-index: 50;
+}
+.tourism .content .parts .part p {
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  padding: 4px 0px;
+  transform: translateX(-50%);
+  z-index: 51;
+  transition: 0.4s;
+  font-family: "TajawalB";
+}
+.tourism .content .parts .part img {
+  border-radius: 10px;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: 0.4s;
+  aspect-ratio: 1 / 0.92;
+  object-fit: cover;
+  object-position: top;
+}
+.tourism .content .parts .part:hover img {
+  transform: scale(1.03);
+}
+.tourism .content .parts .part:hover p {
+  bottom: 16px;
+}
+@media (max-width: 992px) {
+  .tourism .content .parts {
+    gap: 12px;
+    margin: 40px auto 30px;
+  }
+  .tourism .content .parts .part {
+    min-width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .tourism .content .parts .part {
+    min-width: 170px;
+  }
+  .tourism .content .headTitle {
+    margin: 0px auto 10px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .tourism .content .headTitle span {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .tourism {
+    padding-top: 36px;
+  }
+  .tourism .content .parts .part p {
+    bottom: 6px;
+    font-size: 20px;
+  }
+  .tourism .content .parts .part:hover p {
+    bottom: 10px;
+  }
+  .tourism .content p {
+    font-size: 16px;
+  }
 }
